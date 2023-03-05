@@ -38,8 +38,10 @@
                         <h2>
                             Our Services
                         </h2>
-                        <p>Express delivery is an innovative service is effective logistics solution for the delivery of
-                            small cargo. This service is useful for companies various.</p>
+                        <p>
+                            You expect things done quickly, efficiently, and affordably. Businesses can no longer
+                            wait overnight for a critical package or essential supplies.
+                        </p>
                     </div>
                 </div>
             </div>

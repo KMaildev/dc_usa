@@ -4,7 +4,10 @@
             <div class="row">
                 <div class="col-12">
                     <div class="s-slider-content text-center">
-                        <h6><span class="dots"></span>logistics cargo service<span class="dots2"></span>
+                        <h6>
+                            <span class="dots"></span>
+                            D.C. Pyit Tine Htaung USA
+                            <span class="dots2"></span>
                         </h6>
                         <h2 class="frame-1"><span>Delivery</span> Express</h2>
                         <h2 class="frame-2"><span>Delivery</span> Express</h2>

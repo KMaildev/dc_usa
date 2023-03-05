@@ -28,7 +28,7 @@
                                     </li>
 
                                     <li>
-                                        <a href="">
+                                        <a href="{{ route('about.index') }}">
                                             Our Company
                                         </a>
                                     </li>
