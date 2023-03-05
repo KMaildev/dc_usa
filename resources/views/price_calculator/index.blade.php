@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title', '- Contact Us')
+@section('title', '- Price Calculator')
 @section('content')
 
     <div class="breadcrumb-area breadcrumb-bg s-breadcrumb-bg">
