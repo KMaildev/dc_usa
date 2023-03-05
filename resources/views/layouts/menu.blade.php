@@ -21,37 +21,37 @@
                             <nav id="mobile-menu">
                                 <ul>
 
-                                    <li class="active">
+                                    <li class="{{ request()->is('/') ? 'active' : '' }}">
                                         <a href="{{ route('welcome') }}">
                                             Home
                                         </a>
                                     </li>
 
-                                    <li>
+                                    <li class="{{ request()->is('about') ? 'active' : '' }}">
                                         <a href="{{ route('about.index') }}">
                                             Our Company
                                         </a>
                                     </li>
 
-                                    <li>
+                                    <li class="{{ request()->is('services') ? 'active' : '' }}">
                                         <a href="{{ route('services.index') }}">
                                             Our Services
                                         </a>
                                     </li>
 
-                                    <li>
+                                    <li class="{{ request()->is('price_calculator') ? 'active' : '' }}">
                                         <a href="{{ route('price_calculator.index') }}">
                                             Price Calculator
                                         </a>
                                     </li>
 
-                                    <li>
+                                    <li class="{{ request()->is('news') ? 'active' : '' }}">
                                         <a href="{{ route('news.index') }}">
                                             News
                                         </a>
                                     </li>
 
-                                    <li>
+                                    <li class="{{ request()->is('contact') ? 'active' : '' }}">
                                         <a href="{{ route('contact.index') }}">
                                             Contact Us
                                         </a>
