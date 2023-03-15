@@ -3,7 +3,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="s-slider-content text-center">
+                    <div class="s-slider-content text-center d-flex justify-content-center">
+
+                        <div class="col-md-6">
+                            <div class="input-group input-group-lg">
+                                <input type="text" class="form-control">
+                                <span class="input-group-text" id="inputGroup-sizing-lg">
+                                    Track
+                                </span>
+                            </div>
+                        </div>
+
+                        <br>
                         <h6>
                             <span class="dots"></span>
                             D.C. Pyit Tine Htaung USA
@@ -22,6 +33,8 @@
             <span></span>
             <span></span>
         </a>
+
+
         <div class="slider-golve">
             <img src="{{ asset('assets/img/slider/golve.png') }}" class="rotateme" alt="">
         </div>

@@ -472,7 +472,7 @@ label {
 	border-bottom: 1px dashed #432f68;
 	background: #1d102d;
 	background: -webkit-linear-gradient(to bottom, rgb(29, 16, 45), rgba(32, 19, 48, .1));
-	background: linear-gradient(to bottom, rgb(29, 16, 45), rgba(32, 19, 48, .1));
+	/* background: linear-gradient(to bottom, rgb(29, 16, 45), rgba(32, 19, 48, .1)); */
 }
 .transparent-header.sticky-menu {
 	border: none;

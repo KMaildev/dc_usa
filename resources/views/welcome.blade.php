@@ -3,7 +3,7 @@
 @section('title', '- Home')
 @section('content')
 
-    <section class="extra-features ef-md-padding pb-115 fix pt-65">
+    <section class="extra-features ef-md-padding pb-115 fix pt-65" id="category-section">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-5 col-lg-6">
