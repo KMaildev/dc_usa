@@ -1,12 +1,60 @@
 @extends('layouts.main')
 @section('title', '- Home')
-@section('title', '- Home')
 @section('content')
+
+    <section id="category-section" class="s-category-area">
+        <div class="container">
+            <div class="s-category-wrap">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="javascript:void(0)" class="s-single-cat mb-30">
+                            <div class="s-cat-icon">
+                                <i class="flaticon-cruise"></i>
+                            </div>
+                            <div class="s-cat-content">
+                                <h5>Sea Freight</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="javascript:void(0)" class="s-single-cat mb-30">
+                            <div class="s-cat-icon">
+                                <i class="flaticon-air-freight"></i>
+                            </div>
+                            <div class="s-cat-content">
+                                <h5>Air Freight</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="javascript:void(0)" class="s-single-cat mb-30">
+                            <div class="s-cat-icon">
+                                <i class="flaticon-delivery-1"></i>
+                            </div>
+                            <div class="s-cat-content">
+                                <h5>Insurance</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="javascript:void(0)" class="s-single-cat mb-30">
+                            <div class="s-cat-icon">
+                                <i class="flaticon-package"></i>
+                            </div>
+                            <div class="s-cat-content">
+                                <h5>Forwarding</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="extra-features ef-md-padding pb-115 fix pt-65" id="category-section">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-xl-5 col-lg-6">
+                <div class="col-xl-6 col-lg-6 col-sm-12">
                     <div class="section-title mb-25">
                         <h6>About of Our Company</h6>
                         <h2>
@@ -18,7 +66,7 @@
                         <h5>Express delivery innovative service effective logistics solution for the delivery small cargo.
                         </h5>
                         <p style="text-align: justify">
-                            “D.C Pyit Tine Htaung Trading & Logistics Inc” is established to provide reliable, affordable
+                            “D.C. Pyit Tine Htaung USA ” is established to provide reliable, affordable
                             and hassle-free logistics services to customers around the globe.
 
                             <br>
@@ -39,14 +87,21 @@
 
                         </p>
                         <a href="{{ route('contact.index') }}" class="btn">
+                            <i class="fa fa-map"></i>
                             Contact Us
+                        </a>
+
+                        <a href="tel:09 882 528 882" class="btn">
+                            Call Now
+                            <i class="fa fa-phone"></i>
                         </a>
                     </div>
                 </div>
-                <div class="col-xl-7 col-lg-6">
+                <div class="col-xl-6 col-lg-6 col-sm-12">
                     <div class="extra-features-img">
-                        <img src="{{ asset('data/about.jpeg') }}" class="wow bounceInDown" data-wow-delay=".3s"
-                            alt="img" style="width: 100%; height: 500px; background-size: center; object-fit: cover;">
+                        <img src="{{ asset('data/company/5.jpg') }}" class="wow bounceInDown" data-wow-delay=".3s"
+                            alt="img"
+                            style="width: 100%; height: auto; background-size: center; object-fit: cover; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                     </div>
                 </div>
             </div>
@@ -54,7 +109,71 @@
     </section>
 
 
-    <section class="fact-area position-relative">
+    <section class="extra-features ef-md-padding" id="category-section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-4 col-sm-12" style="padding: 14px;">
+                    <div class="p-a30 m-b30 radius-sm bg-gray clearfix">
+                        <img src="{{ asset('data/company/8.jpg') }}" alt="" data-enlargeable=""
+                            style="object-position: top; width: 100%; height: 600px; object-fit: cover; background-size: corver; border: 2px solid #555;"
+                            class="img-enlargeable">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12" style="padding: 14px;">
+                    <div class="p-a30 m-b30 radius-sm bg-gray clearfix">
+                        <img src="{{ asset('data/company/9.jpg') }}" alt="" data-enlargeable=""
+                            style="object-position: top; width: 100%; height: 600px; object-fit: cover; background-size: corver; border: 2px solid #555;"
+                            class="img-enlargeable">
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-4 col-sm-12 py-5">
+                    <div class="row align-items-center">
+                        <div class="single-delivery-services mb-70 pr-75">
+                            <div class="ds-icon order-0 order-md-2">
+                                <img src="{{ asset('assets/img/icon/ds_icon01.png') }}" alt="icon">
+                            </div>
+                            <div class="ds-content text-center text-sm-left text-md-right">
+                                <h5>Cargo Delivery</h5>
+                                <p>
+                                    Shipping goods from the United States to Myanmar.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="single-delivery-services mb-70 pr-75">
+                            <div class="ds-icon order-0 order-md-2">
+                                <img src="{{ asset('assets/img/icon/ds_icon02.png') }}" alt="icon">
+                            </div>
+                            <div class="ds-content text-center text-sm-left text-md-right">
+                                <h5>
+                                    International Delivery Services
+                                </h5>
+                                <p>
+                                    International shipping from Myanmar.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="single-delivery-services mb-70 pr-75">
+                            <div class="ds-icon order-0 order-md-2">
+                                <img src="{{ asset('assets/img/icon/ds_icon03.png') }}" alt="icon">
+                            </div>
+                            <div class="ds-content text-center text-sm-left text-md-right">
+                                <h5>Shopper</h5>
+                                <p>
+                                    Buying products from the United States and Myanmar.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="fact-area position-relative py-5">
         <div class="fact-bg"></div>
         <div class="container">
             <div class="row justify-content-center">
@@ -227,7 +346,6 @@
     </section>
 
 
-
     <section class="services-area delivery-bg inner-help-bg pt-110 pb-70">
         <div class="container">
             <div class="row justify-content-center">
@@ -326,42 +444,9 @@
             </div>
 
 
-            <div class="py-5 row gy-4 align-items-center features-item aos-init aos-animate" data-aos="fade-up">
-                <div class="col-md-6">
-                    <div class="s-section-title mb-30">
-                        <h2>International Cargo Service</h2>
-                        <h6>
-                            International shipping from Myanmar.
-                        </h6>
-                    </div>
-                    <p style="text-align: justify">
-                        D.C Pyit Tine Htaung’s Sale Service generously offers customers with tasty Asian foods such as dried
-                        fishes, prawns and many other groceries. Authentic Myanmar foods prepared by popular chefs are also
-                        available in stock or pre-order.
-                    </p>
-                    <br>
-                    <a href="{{ route('contact.index') }}" class="btn red-btn">
-                        Contact Us
-                    </a>
-                </div>
-
-                <div class="col-md-6">
-                    <img src="{{ asset('data/s2.jpeg') }}" alt="img"
-                        style="width: 100%; height: 400px; background-size: center; object-fit: cover;">
-                </div>
-            </div>
-
-
-
 
 
             <div class="py-5 row gy-4 align-items-center features-item aos-init aos-animate" data-aos="fade-up">
-
-                <div class="col-md-6">
-                    <img src="{{ asset('data/s3.jpeg') }}" alt="img"
-                        style="width: 100%; height: 400px; background-size: center; object-fit: cover;">
-                </div>
-
                 <div class="col-md-6">
                     <div class="s-section-title mb-30">
                         <h2>
@@ -383,6 +468,10 @@
                     </a>
                 </div>
 
+                <div class="col-md-6">
+                    <img src="{{ asset('data/s3.jpeg') }}" alt="img"
+                        style="width: 100%; height: 400px; background-size: center; object-fit: cover;">
+                </div>
 
             </div>
         </div>

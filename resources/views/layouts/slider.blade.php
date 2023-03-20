@@ -3,27 +3,31 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="s-slider-content text-center d-flex justify-content-center">
+                    <div class="s-slider-content text-center">
 
-                        <div class="col-md-6">
-                            <div class="input-group input-group-lg">
-                                <input type="text" class="form-control">
-                                <span class="input-group-text" id="inputGroup-sizing-lg">
-                                    Track
-                                </span>
-                            </div>
+                        <center>
+                            <form action="https://www.dhl.com/us-en/home/tracking.html" target="_blank" autocomplete="off">
+                                <div class="col-md-6">
+                                    <div class="input-group input-group-lg">
+                                        <input type="text" class="form-control" name="tracking-id"
+                                            placeholder="Enter your tracking number" required>
+                                        <input type="submit" class="btn btn-primary" value="Track">
+                                    </div>
+                                </div>
+                            </form>
+                        </center>
+
+                        <div class="col-md-12 py-4">
+                            <h6>
+                                <span class="dots"></span>
+                                D.C. Pyit Tine Htaung USA
+                                <span class="dots2"></span>
+                            </h6>
+                            <h2 class="frame-1"><span>Delivery</span> Express</h2>
+                            <h2 class="frame-2"><span>Delivery</span> Express</h2>
+                            <h2 class="frame-3"><span>Delivery</span> Express</h2>
+                            <h2 class="frame-4"><span>Delivery</span> Express</h2>
                         </div>
-
-                        <br>
-                        <h6>
-                            <span class="dots"></span>
-                            D.C. Pyit Tine Htaung USA
-                            <span class="dots2"></span>
-                        </h6>
-                        <h2 class="frame-1"><span>Delivery</span> Express</h2>
-                        <h2 class="frame-2"><span>Delivery</span> Express</h2>
-                        <h2 class="frame-3"><span>Delivery</span> Express</h2>
-                        <h2 class="frame-4"><span>Delivery</span> Express</h2>
                     </div>
                 </div>
             </div>
@@ -33,8 +37,6 @@
             <span></span>
             <span></span>
         </a>
-
-
         <div class="slider-golve">
             <img src="{{ asset('assets/img/slider/golve.png') }}" class="rotateme" alt="">
         </div>
