@@ -151,13 +151,13 @@
                         <div class="contact-content">
                             <h5>Phone Number</h5>
                             <span>
-                                <a href="tel:301 448 6248">
-                                    301 448 6248
+                                <a href="tel: 1 301-448-6248">
+                                    +1 301-448-6248
                                 </a>
                             </span>
                             <span>
-                                <a href="tel:202 697 6601">
-                                    202 697 6601
+                                <a href="tel:1202 697 6601">
+                                    +1 202 697 6601
                                 </a>
                             </span>
                         </div>

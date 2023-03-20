@@ -31,7 +31,7 @@
     <section class="extra-features ef-md-padding pb-115 fix pt-65">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-xl-5 col-lg-6">
+                <div class="col-xl-6 col-lg-6 col-sm-12">
                     <div class="section-title mb-25">
                         <h6>About of Our Company</h6>
                         <h2>
@@ -43,7 +43,7 @@
                         <h5>Express delivery innovative service effective logistics solution for the delivery small cargo.
                         </h5>
                         <p style="text-align: justify">
-                            “D.C Pyit Tine Htaung Trading & Logistics Inc” is established to provide reliable, affordable
+                            “D.C. Pyit Tine Htaung USA ” is established to provide reliable, affordable
                             and hassle-free logistics services to customers around the globe.
 
                             <br>
@@ -64,14 +64,21 @@
 
                         </p>
                         <a href="{{ route('contact.index') }}" class="btn">
+                            <i class="fa fa-map"></i>
                             Contact Us
+                        </a>
+
+                        <a href="tel:09 882 528 882" class="btn">
+                            Call Now
+                            <i class="fa fa-phone"></i>
                         </a>
                     </div>
                 </div>
-                <div class="col-xl-7 col-lg-6">
+                <div class="col-xl-6 col-lg-6 col-sm-12">
                     <div class="extra-features-img">
-                        <img src="{{ asset('data/about.jpeg') }}" class="wow bounceInDown" data-wow-delay=".3s"
-                            alt="img" style="width: 100%; height: 500px; background-size: center; object-fit: cover;">
+                        <img src="{{ asset('data/company/5.jpg') }}" class="wow bounceInDown" data-wow-delay=".3s"
+                            alt="img"
+                            style="width: 100%; height: auto; background-size: center; object-fit: cover; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                     </div>
                 </div>
             </div>

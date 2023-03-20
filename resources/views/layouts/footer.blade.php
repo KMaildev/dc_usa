@@ -23,6 +23,42 @@
                                 <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                             </ul>
                         </div>
+
+                        <div class="fw-link py-4">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-map"></i>
+                                        13814 Loree Ln, Rockville, MD, United States, Maryland
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:info@dcpyittinehtaungusa.com">
+                                        <i class="fa fa-envelope"></i>
+                                        info@dcpyittinehtaungusa.com
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:09 882 528 882">
+                                        <i class="fa fa-phone-volume"></i>
+                                        09 882 528 882,
+                                    </a>
+                                    <a href="tel:09 420 617 436">
+                                        09 420 617 436
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="tel: +1 301-448-6248">
+                                        <i class="fa fa-tty"></i>
+                                        +1 301-448-6248,
+                                    </a>
+                                    <a href="tel:+1 202 697 6601">
+                                        +1 202 697 6601
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
@@ -55,12 +91,6 @@
                                     </a>
                                 </li>
 
-                                <li>
-                                    <a href="{{ route('price_calculator.index') }}">
-                                        <i class="fas fa-caret-right"></i>
-                                        Price Calculator
-                                    </a>
-                                </li>
 
                                 <li>
                                     <a href="{{ route('news.index') }}">
@@ -123,13 +153,15 @@
             <div class="row align-items-center">
                 <div class="col-lg-12 col-md-12">
                     <div class="copyright-text">
-                        <p>
-                            Copyright©
-                            <span>
-                                D.C Pyit Tine Htaung Trading & Logistics Company
-                            </span>
-                            | All Rights Reserved
-                        </p>
+                        <center>
+                            <p>
+                                Copyright©
+                                <span>
+                                    D.C Pyit Tine Htaung Trading & Logistics Company
+                                </span>
+                                | All Rights Reserved
+                            </p>
+                        </center>
                     </div>
                 </div>
             </div>

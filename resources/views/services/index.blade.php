@@ -143,7 +143,7 @@
             <div class="row gy-4 align-items-center features-item aos-init aos-animate" data-aos="fade-up">
                 <div class="col-md-6">
                     <img src="{{ asset('data/s1.jpeg') }}" alt="img"
-                        style="width: 100%; height: 500px; background-size: center; object-fit: cover;">
+                        style="width: 100%; height: 500px; background-size: center; object-fit: cover; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                 </div>
                 <div class="col-md-6">
                     <div class="s-section-title mb-30">
@@ -166,40 +166,6 @@
 
 
             <div class="py-5 row gy-4 align-items-center features-item aos-init aos-animate" data-aos="fade-up">
-                <div class="col-md-6">
-                    <div class="s-section-title mb-30">
-                        <h2>International Cargo Service</h2>
-                        <h6>
-                            International shipping from Myanmar.
-                        </h6>
-                    </div>
-                    <p style="text-align: justify">
-                        D.C Pyit Tine Htaung’s Sale Service generously offers customers with tasty Asian foods such as dried
-                        fishes, prawns and many other groceries. Authentic Myanmar foods prepared by popular chefs are also
-                        available in stock or pre-order.
-                    </p>
-                    <br>
-                    <a href="{{ route('contact.index') }}" class="btn red-btn">
-                        Contact Us
-                    </a>
-                </div>
-
-                <div class="col-md-6">
-                    <img src="{{ asset('data/s2.jpeg') }}" alt="img"
-                        style="width: 100%; height: 400px; background-size: center; object-fit: cover;">
-                </div>
-            </div>
-
-
-
-
-
-            <div class="py-5 row gy-4 align-items-center features-item aos-init aos-animate" data-aos="fade-up">
-
-                <div class="col-md-6">
-                    <img src="{{ asset('data/s3.jpeg') }}" alt="img"
-                        style="width: 100%; height: 400px; background-size: center; object-fit: cover;">
-                </div>
 
                 <div class="col-md-6">
                     <div class="s-section-title mb-30">
@@ -222,6 +188,10 @@
                     </a>
                 </div>
 
+                <div class="col-md-6">
+                    <img src="{{ asset('data/s3.jpeg') }}" alt="img"
+                        style="width: 100%; height: 400px; background-size: center; object-fit: cover; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                </div>
 
             </div>
         </div>
