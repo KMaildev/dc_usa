@@ -417,63 +417,42 @@
     </section>
 
 
-    <section id="features" class="features pt-110">
+    <section id="features" class="features py-5">
         <div class="container">
-            <div class="row gy-4 align-items-center features-item aos-init aos-animate" data-aos="fade-up">
-                <div class="col-md-6">
-                    <img src="{{ asset('data/s1.jpeg') }}" alt="img"
-                        style="width: 100%; height: 500px; background-size: center; object-fit: cover;">
-                </div>
-                <div class="col-md-6">
-                    <div class="s-section-title mb-30">
-                        <h2>International Cargo Service</h2>
-                        <h6>
-                            Shipping goods from the United States to Myanmar.
-                        </h6>
+            @foreach ($services as $service)
+                <div style="box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; padding: 20px;"
+                    class="row mb-20 gy-4 align-items-center features-item aos-init aos-animate" data-aos="fade-up">
+                    <div class="col-md-4 col-lg-4 col-sm-12">
+                        <img src="{{ asset('data/s1.jpeg') }}" alt="img"
+                            style="width: 100%; height: auto; background-size: center; object-fit: cover;">
                     </div>
-                    <p style="text-align: justify">
-                        D.C Pyit Tine Htaung’s Cargo Service provides customers in Asia and the United States with reliable
-                        logistics support. Our service includes door-to-door express delivery as well as free shipping label
-                        for customers in certain locations within the United States while sending items to our office.
-                    </p>
-                    <br>
-                    <a href="{{ route('contact.index') }}" class="btn red-btn">
-                        Contact Us
-                    </a>
-                </div>
-            </div>
-
-
-
-
-            <div class="py-5 row gy-4 align-items-center features-item aos-init aos-animate" data-aos="fade-up">
-                <div class="col-md-6">
-                    <div class="s-section-title mb-30">
-                        <h2>
-                            Shopper
-                        </h2>
-                        <h6>
-                            Buying products from the United States and Myanmar.
-                        </h6>
+                    <div class="col-md-8 col-lg-8 col-sm-12">
+                        <div class="s-section-title mb-30">
+                            <h2>
+                                @if (session('key') == 'mm')
+                                    {{ $service->service_title_mm ?? '' }}
+                                @else
+                                    {{ $service->service_title_eng ?? '' }}
+                                @endif
+                            </h2>
+                            <h6>
+                                D.C. Pyit Tine Htaung USA
+                            </h6>
+                        </div>
+                        <p style="text-align: justify">
+                            @if (session('key') == 'mm')
+                                {!! $service->service_description_mm ?? '' !!}
+                            @else
+                                {!! $service->service_description_eng ?? '' !!}
+                            @endif
+                        </p>
+                        <br>
+                        <a href="{{ route('contact.index') }}" class="btn red-btn">
+                            Contact Us
+                        </a>
                     </div>
-                    <p style="text-align: justify">
-                        D.C Pyit Tine Htaung’s Shopper Service provides customers with access to their choice of online and
-                        in-stores such as Amazon, Walmart, Costco, Macy’s and many other premium shops. Customers are
-                        responsible for providing information about purchasing items such as web link and full payment is
-                        due on the day of the purchase with a 10 percent surcharge.
-                    </p>
-                    <br>
-                    <a href="{{ route('contact.index') }}" class="btn red-btn">
-                        Contact Us
-                    </a>
                 </div>
-
-                <div class="col-md-6">
-                    <img src="{{ asset('data/s3.jpeg') }}" alt="img"
-                        style="width: 100%; height: 400px; background-size: center; object-fit: cover;">
-                </div>
-
-            </div>
+            @endforeach
         </div>
     </section>
 

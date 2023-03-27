@@ -11,13 +11,31 @@
                             <ol class="breadcrumb">
                                 <li class="dots"></li>
                                 <li class="breadcrumb-item">
-                                    <a href="{{ route('welcome') }}">Home</a>
+                                    <a href="{{ route('welcome') }}">
+                                        @if (session('key') == 'mm')
+                                            ပင်မစာမျက်နှာ
+                                        @else
+                                            Home
+                                        @endif
+                                    </a>
                                 </li>
-                                <li class="breadcrumb-item active" aria-current="page">News & Media</li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    @if (session('key') == 'mm')
+                                        သတင်း
+                                    @else
+                                        News
+                                    @endif
+                                </li>
                                 <li class="dots2"></li>
                             </ol>
                         </nav>
-                        <h2>Latest news</h2>
+                        <h2>
+                            @if (session('key') == 'mm')
+                                သတင်း
+                            @else
+                                Latest news
+                            @endif
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -39,13 +57,13 @@
                             <div class="blog-content">
                                 <h4>
                                     <a href="{{ route('news.show', $new->id) }}">
-                                        {{ $new->title ?? '' }}
+                                        @if (session('key') == 'mm')
+                                            {{ $new->title_mm ?? '' }}
+                                        @else
+                                            {{ $new->title ?? '' }}
+                                        @endif
                                     </a>
                                 </h4>
-
-                                <p>
-                                    {{ Str::limit($new->description, 200) }}
-                                </p>
 
                                 <div class="blog-classic-meta">
                                     <ul>
@@ -56,7 +74,11 @@
 
                                         <li class="blog-more-read">
                                             <a href="{{ route('news.show', $new->id) }}">
-                                                More Reading...
+                                                @if (session('key') == 'mm')
+                                                    ဆက်ဖတ်ပါ...
+                                                @else
+                                                    More Reading...
+                                                @endif
                                             </a>
                                         </li>
 

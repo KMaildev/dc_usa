@@ -2,6 +2,7 @@
 @section('title', '- News')
 @section('content')
 
+
     <div class="breadcrumb-area breadcrumb-bg t-breadcrumb-bg" style="background-image: url({{ asset('data/new.png') }});">
         <div class="container">
             <div class="row">
@@ -11,13 +12,31 @@
                             <ol class="breadcrumb">
                                 <li class="dots"></li>
                                 <li class="breadcrumb-item">
-                                    <a href="{{ route('welcome') }}">Home</a>
+                                    <a href="{{ route('welcome') }}">
+                                        @if (session('key') == 'mm')
+                                            ပင်မစာမျက်နှာ
+                                        @else
+                                            Home
+                                        @endif
+                                    </a>
                                 </li>
-                                <li class="breadcrumb-item active" aria-current="page">News & Media</li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    @if (session('key') == 'mm')
+                                        သတင်း
+                                    @else
+                                        News
+                                    @endif
+                                </li>
                                 <li class="dots2"></li>
                             </ol>
                         </nav>
-                        <h2>Latest news</h2>
+                        <h2>
+                            @if (session('key') == 'mm')
+                                သတင်း
+                            @else
+                                Latest news
+                            @endif
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -38,12 +57,21 @@
                         <div class="blog-content">
                             <h4>
                                 <a href="{{ route('news.show', $new->id) }}">
-                                    {{ $new->title ?? '' }}
+                                    @if (session('key') == 'mm')
+                                        {{ $new->title_mm ?? '' }}
+                                    @else
+                                        {{ $new->title ?? '' }}
+                                    @endif
                                 </a>
                             </h4>
 
                             <p>
-                                {!! $new->description ?? '' !!}
+
+                                @if (session('key') == 'mm')
+                                    {!! $new->description_mm ?? '' !!}
+                                @else
+                                    {!! $new->description ?? '' !!}
+                                @endif
                             </p>
 
                             <div class="blog-classic-meta">
@@ -52,7 +80,6 @@
                                         <i class="far fa-clock"></i>
                                         {{ $new->upload_date ?? '' }}
                                     </li>
-
 
                                     <li class="blog-post-share">
                                         <a href="#"><i class="fab fa-facebook-f"></i></a>

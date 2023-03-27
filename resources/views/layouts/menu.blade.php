@@ -1,22 +1,20 @@
 <header>
     <div id="header-sticky" class="main-header transparent-header" style="background-color: white;">
-        <div class="container header-container-p">
+        <div class="container-fulid header-container-p">
             <div class="row d-flex justify-content-center">
-                <div class="col-lg-4 col-md-4">
-                    <div class="">
-                        <a href="{{ route('welcome') }}">
-                            <img src="{{ asset('data/weblogo.jpg') }}" class="mobile-logo logo-sticky-none" alt="Logo"
-                                style="width: 35%">
-                        </a>
+                <div class="col-lg-2 col-md-2">
+                    <a href="{{ route('welcome') }}">
+                        <img src="{{ asset('data/weblogo.jpg') }}" class="mobile-logo logo-sticky-none" alt="Logo"
+                            style="width: 78%">
+                    </a>
 
-                        <a href="{{ route('welcome') }}">
-                            <img src="{{ asset('data/weblogo.jpg') }}" class="mobile-logo s-logo-none" alt="Logo"
-                                style="width: 40%">
-                        </a>
-                    </div>
+                    <a href="{{ route('welcome') }}">
+                        <img src="{{ asset('data/weblogo.jpg') }}" class="mobile-logo s-logo-none" alt="Logo"
+                            style="width: 78%">
+                    </a>
                 </div>
 
-                <div class="col-lg-8 col-md-8">
+                <div class="col-lg-10 col-md-10">
                     <div class="menu-area">
                         <div class="main-menu">
                             <nav id="mobile-menu">
@@ -24,37 +22,94 @@
 
                                     <li class="{{ request()->is('/') ? 'active' : '' }}">
                                         <a href="{{ route('welcome') }}" style="color: #E93F33;">
-                                            Home
+                                            @if (session('key') == 'mm')
+                                                ပင်မစာမျက်နှာ
+                                            @else
+                                                Home
+                                            @endif
                                         </a>
                                     </li>
 
+
                                     <li class="{{ request()->is('about') ? 'active' : '' }}">
-                                        <a href="{{ route('about.index') }}" style="color: #E93F33;">
-                                            About Of Our Company
+                                        <a href="javascript:void(0)" style="color: #E93F33;">
+                                            @if (session('key') == 'mm')
+                                                ကုမ္ပဏီအကြောင်း
+                                            @else
+                                                About Us
+                                            @endif
                                         </a>
+                                        <ul class="submenu">
+                                            <li>
+                                                <a href="{{ route('about.index') }}">
+                                                    @if (session('key') == 'mm')
+                                                        ကျွန်ုပ်တို့၏ကုမ္ပဏီအကြောင်း
+                                                    @else
+                                                        About of Our Company
+                                                    @endif
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="{{ route('team.index') }}">
+                                                    @if (session('key') == 'mm')
+                                                        ကျွန်ုပ်တို့၏အဖွဲ့သားများ
+                                                    @else
+                                                        Our Team Members
+                                                    @endif
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </li>
+
 
                                     <li class="{{ request()->is('services') ? 'active' : '' }}">
                                         <a href="{{ route('services.index') }}" style="color: #E93F33;">
-                                            Our Services
+                                            @if (session('key') == 'mm')
+                                                ဝန်ဆောင်မှုများ
+                                            @else
+                                                Our Services
+                                            @endif
                                         </a>
                                     </li>
 
-                                    <li class="{{ request()->is('price_calculator') ? 'active' : '' }}" hidden>
+                                    <li class="{{ request()->is('price_calculator') ? 'active' : '' }}">
                                         <a href="{{ route('price_calculator.index') }}" style="color: #E93F33;">
-                                            Price Calculator
+                                            @if (session('key') == 'mm')
+                                                စျေးနှုန်းတွက်ရန်
+                                            @else
+                                                Calculator
+                                            @endif
                                         </a>
                                     </li>
 
                                     <li class="{{ request()->is('news') ? 'active' : '' }}">
                                         <a href="{{ route('news.index') }}" style="color: #E93F33;">
-                                            News
+                                            @if (session('key') == 'mm')
+                                                သတင်း
+                                            @else
+                                                News
+                                            @endif
+                                        </a>
+                                    </li>
+
+                                    <li class="{{ request()->is('activities') ? 'active' : '' }}">
+                                        <a href="{{ route('activities.index') }}" style="color: #E93F33;">
+                                            @if (session('key') == 'mm')
+                                                လှုပ်ရှားမှုများ
+                                            @else
+                                                Activities
+                                            @endif
                                         </a>
                                     </li>
 
                                     <li class="{{ request()->is('contact') ? 'active' : '' }}">
                                         <a href="{{ route('contact.index') }}" style="color: #E93F33;">
-                                            Contact Us
+                                            @if (session('key') == 'mm')
+                                                ဆက်သွယ်ရန်
+                                            @else
+                                                Contact Us
+                                            @endif
                                         </a>
                                     </li>
 
@@ -62,10 +117,17 @@
                             </nav>
                         </div>
                         <div class="header-btn">
-                            <a href="#" class="btn" data-toggle="modal" data-target="#exampleModalLong">
-                                <img src="{{ asset('assets/img/icon/calculator-symbols.png') }}" alt="icon">
-                                Track
+
+                            <a href="{{ route('set_eng') }}">
+                                <img src="https://www.dare-dragon.com//data/us.gif" alt=""
+                                    style="width: 45px; height: auto; padding: 2px;">
                             </a>
+
+                            <a href="{{ route('set_mm') }}">
+                                <img src="https://www.dare-dragon.com//data/mm.png" alt=""
+                                    style="width: 43px; height: auto; padding: 2px;">
+                            </a>
+
                         </div>
                     </div>
                 </div>

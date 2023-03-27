@@ -4,15 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>D.C Pyit Tine Htaung Trading & Logistics Company @yield('title')</title>
+    <title>D.C. Pyit Tine Htaung USA @yield('title')</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('data/logo.jpg') }}">
 
-    <meta name="description" content="D.C Pyit Tine Htaung Trading & Logistics Company" />
-    <meta name="keywords" content="D.C Pyit Tine Htaung Trading & Logistics Company" />
-    <meta name="author" content="D.C Pyit Tine Htaung Trading & Logistics Company" />
+    <meta name="description" content="D.C. Pyit Tine Htaung USA" />
+    <meta name="keywords" content="D.C. Pyit Tine Htaung USA" />
+    <meta name="author" content="D.C. Pyit Tine Htaung USA" />
     <meta property="og:image" content="{{ asset('data/logo.jpg') }}" />
     <meta property="og:url" content="" />
 

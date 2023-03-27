@@ -11,13 +11,31 @@
                             <ol class="breadcrumb">
                                 <li class="dots"></li>
                                 <li class="breadcrumb-item">
-                                    <a href="{{ route('welcome') }}">Home</a>
+                                    <a href="{{ route('welcome') }}">
+                                        @if (session('key') == 'mm')
+                                            ပင်မစာမျက်နှာ
+                                        @else
+                                            Home
+                                        @endif
+                                    </a>
                                 </li>
-                                <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    @if (session('key') == 'mm')
+                                        ဆက်သွယ်ရန်
+                                    @else
+                                        Contact Us
+                                    @endif
+                                </li>
                                 <li class="dots2"></li>
                             </ol>
                         </nav>
-                        <h2>support</h2>
+                        <h2>
+                            @if (session('key') == 'mm')
+                                ဆက်သွယ်ရန်
+                            @else
+                                Contact Us
+                            @endif
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -30,15 +48,29 @@
                 <div class="col-xl-7 col-lg-10">
                     <div class="s-section-title text-center mb-60">
                         <h2>Get In Touch</h2>
-                        <p style="text-align: justify;">
-                            We welcome any inquiries or favorable feedback from you. You may submit in your inquiries via
-                            our web form below, or alternatively, you may either email us at
-                            <a href="mailto:contact@dcpyittinehtaungusa.com">
-                                contact@dcpyittinehtaungusa.com
-                            </a>
-                            . We
-                            will try our very best to reply you as soon as possible.
-                        </p>
+                        @if (session('key') == 'mm')
+                            <p style="text-align: justify;">
+                                သင့်ထံမှ စုံစမ်းမေးမြန်းမှုများ သို့မဟုတ် ကောင်းမွန်သော တုံ့ပြန်မှုများကို ကျွန်ုပ်တို့
+                                ကြိုဆိုပါသည်။ သင်၏စုံစမ်းမေးမြန်းမှုများကို အောက်ပါဝက်ဘ်ဖောင်မှတဆင့် တင်ပြနိုင်သည်၊
+                                သို့မဟုတ် တနည်းအားဖြင့် <a
+                                    href="mailto:contact@dcpyittinehtaungusa.com">contact@dcpyittinehtaungusa.com</a> တွင်
+                                ကျွန်ုပ်တို့ထံ
+                                အီးမေးလ်ပေးပို့နိုင်ပါသည်။ တတ်နိုင်သမျှ အမြန်ဆုံး အကြောင်းပြန်ရန် ကျွန်ုပ်တို့ အစွမ်းကုန်
+                                ကြိုးစားပါမည်။
+                            </p>
+                        @else
+                            <p style="text-align: justify;">
+                                We welcome any inquiries or favorable feedback from you. You may submit in your inquiries
+                                via
+                                our web form below, or alternatively, you may either email us at
+                                <a href="mailto:contact@dcpyittinehtaungusa.com">
+                                    contact@dcpyittinehtaungusa.com
+                                </a>
+                                . We
+                                will try our very best to reply you as soon as possible.
+                            </p>
+                        @endif
+
                     </div>
                 </div>
             </div>
@@ -137,7 +169,7 @@
                         <div class="contact-content">
                             <h5>US Location</h5>
                             <span>
-                                13814 Loree Lane Rockville, MD 20853
+                                13814 Loree Ln, Rockville, MD 20853, United States, Maryland, USA.
                             </span>
                         </div>
                     </div>
